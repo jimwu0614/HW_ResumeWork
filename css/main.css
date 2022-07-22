@@ -1,0 +1,97 @@
+/* source:https://www.youtube.com/watch?v=TawH-AqHTXc */
+
+@import url('https://fonts.googleapis.com/css?family=Monoton');
+
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0a2a43;
+    min-height: 1500px;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    top: 0px;
+    z-index: 1000;
+    padding: 0;
+    background-color: #0B568F!important
+
+}
+/* 左上角的按鈕 */
+.navbar-light .navbar-brand {
+    color: rgba(255,255,255,.9);
+}
+
+/* 右上角書籤連結的按鈕的位置 */
+
+.navbar-collapse{
+    justify-content: end;
+}
+
+/* 連接圖片 */
+.rollImg .connect1{
+    background:url("https://picsum.photos/1024/1140/?randon=1") ;
+    background-blend-mode: multiply, screen;
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+
+.rollImg .connect2{
+    background:url("https://picsum.photos/1024/1140/?randon=2") ;
+    background-blend-mode: multiply, screen;
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+
+.rollImg .connect3{
+    background:url("https://picsum.photos/1024/1140/?randon=3") ;
+    background-blend-mode: multiply, screen;
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+
+
+
+.bg {
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    border: 1px solid black;
+}
+
+.bg h1{
+    font-family: 'Monoton', cursive;
+}
+
+
+/* 返回頁首的按鈕 */
+#go_top_page {
+    width: 50px;
+    height: 50px;
+    background: rgba(31, 130, 207, 0.7);
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 9999
+}
+
+#go_top_page a {
+    display: block;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    text-decoration: none
+}

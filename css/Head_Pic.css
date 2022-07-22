@@ -1,0 +1,78 @@
+section {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* 圖片下緣,用漸層營造淡出 */
+section::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #0a2a43, transparent);
+    z-index: 101;
+}
+
+/* 用覆蓋的方式,讓整個畫面色調變成暗藍色 */
+section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0a2a43;
+    z-index: 99;
+    mix-blend-mode: color;
+}
+
+section img {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* 填滿畫面 */
+    object-fit: cover;
+    pointer-events: none;
+}
+
+section .text {
+    position: relative;
+    color: #fff;
+    font-size: 6em;
+    z-index: 1;
+}
+
+@media screen and (max-width:768px) { 
+    section .text {
+        position: relative;
+        color: #fff;
+        font-size: 3em;
+        z-index: 1;
+    }
+  }
+
+section .road {
+    z-index: 2;
+}
+
+.HeadPic h2{
+    position: relative;
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+    z-index: 100;
+}
+
+.HeadPic h2 span{
+    color: #E0300B;
+    z-index: 100;
+}
