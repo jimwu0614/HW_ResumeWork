@@ -11,10 +11,10 @@
             var value = window.scrollY;
 
             console.log(value);
-            bg.style.top = 60 + value + 'px';
-            moon.style.left = 60 + (-value * 0.3) + 'px';
-            montain.style.top = 60 + (-value * 0.1) + 'px';
-            road.style.top = 60 + (value * 0.1) + 'px';
+            bg.style.top = 0 + value + 'px';
+            moon.style.left = 0 + (-value * 0.3) + 'px';
+            montain.style.top = 0 + (-value * 0.1) + 'px';
+            road.style.top = 0 + (value * 0.1) + 'px';
             text.style.top = value + 'px';
             text2.style.top = value + 'px';
             // text.style.fontSize = '10em' / value + 'px';

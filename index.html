@@ -39,7 +39,7 @@
 
 <body>
     <!-- 頁首區 -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <nav class="navbar navbar-expand-md navbar-light bg-light" id="top_nav_bar">
         
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,11 +93,11 @@
 
   <!-- 內文主體 -->
     <!-- 自我介紹 -->
-    <article class="container mt-5" id="about">
+    <article class="container mt-5" >
         <div class="row">
-            <div class="col-12 col-md-12"><h1 class="display-2">About Me</h1></div>
-            <div class="col-12 col-md-4 bg"><h1>1-1</h1></div>
-            <div class="col-12 col-md-8 ">
+            <div class="col-12 col-md-12" id="about"><h1 class="display-2">About Me</h1></div>
+            <div class="col-12 col-md-4 "><img class="mypic" id="mypic" src="./img/myPic.jpg" alt=""></div>
+            <div class="col-12 col-md-8 profile" id="profile">
                 <h4>哈囉，我是吳佳駿<a href="https://github.com/jimwu0614" target="_blank" class="github"><i class="fa-brands fa-github"></i></a></h4>
                 <p>
 
@@ -210,11 +210,12 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <!-- 頁首圖片用的JS -->
     <script src="./js/pic.js"></script>
-    <!-- 返回頁首用的JS -->
+    <!-- 回頁首按鈕及nav_bar用的JS -->
     <script src="./js/top_button.js"></script>
+    <!-- 內文滑進來用的JS -->
+    <script src="./js/fadeslide.js"></script>
 
     <script>
-
 
     </script>
 </body>
