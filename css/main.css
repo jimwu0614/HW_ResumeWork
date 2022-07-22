@@ -24,9 +24,10 @@ body {
     padding: 0;
     background-color: #0B568F!important;
     justify-content: flex-end;
-
+    
 }
-/* 左上角的按鈕 */
+
+/* 右上角的按鈕 */
 .navbar-light .navbar-brand {
     color: rgba(255,255,255,.9);
 }
@@ -37,7 +38,34 @@ body {
     justify-content: end;
 }
 
-/* 連接圖片 */
+/* navbar點開後的欄位 */
+.navbar-nav {
+    align-items: flex-end;
+}
+
+.nav-link{
+    width: 10rem;
+    color: rgb(0 229 255)!important;
+    font-weight: 900;
+    background: rgb(118 255 247 / 20%)!important;
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+
+/* 正文開始 */
+article{
+    color: aliceblue;
+}
+
+
+.github{
+    display: inline-block;
+
+}
+
+
+/* 區域連接圖片 */
 .rollImg .connect1{
     background:url("https://picsum.photos/1024/1140/?randon=1") ;
     background-blend-mode: multiply, screen;
@@ -56,6 +84,14 @@ body {
 
 .rollImg .connect3{
     background:url("https://picsum.photos/1024/1140/?randon=3") ;
+    background-blend-mode: multiply, screen;
+    background-position: center;
+    /* background-size: cover; */
+    background-attachment: fixed;
+}
+
+.rollImg .connect4{
+    background:url("https://picsum.photos/1024/1140/?randon=4") ;
     background-blend-mode: multiply, screen;
     background-position: center;
     /* background-size: cover; */
