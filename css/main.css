@@ -22,7 +22,8 @@ body {
     top: 0px;
     z-index: 1000;
     padding: 0;
-    background-color: #0B568F!important
+    background-color: #0B568F!important;
+    justify-content: flex-end;
 
 }
 /* 左上角的按鈕 */
