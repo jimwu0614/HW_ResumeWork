@@ -152,7 +152,8 @@ article{
 
 /* 區域連接圖片 */
 .rollImg .connect1{
-    /* background:url("https://picsum.photos/1024/1140/?randon=1") ; */
+    height: 50vh;
+    background:url("../img/connpic1.jpg") ;
     background-blend-mode: multiply, screen;
     background-position: center;
     /* background-size: cover; */
@@ -160,7 +161,8 @@ article{
 }
 
 .rollImg .connect2{
-    /* background:url("https://picsum.photos/1024/1140/?randon=2") ; */
+    height: 50vh;
+    background:url("../img/connpic2.jpg") ;
     background-blend-mode: multiply, screen;
     background-position: center;
     /* background-size: cover; */
@@ -168,7 +170,8 @@ article{
 }
 
 .rollImg .connect3{
-    /* background:url("https://picsum.photos/1024/1140/?randon=3") ; */
+    height: 50vh;
+    background:url("../img/connpic3.jpg") ;
     background-blend-mode: multiply, screen;
     background-position: center;
     /* background-size: cover; */
@@ -176,7 +179,8 @@ article{
 }
 
 .rollImg .connect4{
-    /* background:url("https://picsum.photos/1024/1140/?randon=4") ; */
+    height: 50vh;
+    background:url("../img/connpic4.jpg") ;
     background-blend-mode: multiply, screen;
     background-position: center;
     /* background-size: cover; */
