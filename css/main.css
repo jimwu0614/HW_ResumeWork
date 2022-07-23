@@ -7,7 +7,8 @@
     margin: 0%;
     padding: 0;
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Cadman', sans-serif;
+
 }
 
 body {
@@ -58,6 +59,10 @@ article{
     color: aliceblue;
 }
 
+.section_title{
+    font-family: 'CAT FrankenDeutsch', sans-serif;
+}
+
 .row1{
     height: auto;
     align-items: center;
@@ -83,9 +88,16 @@ article{
     opacity: 0;
 }
 
+
 .mypic {
     width: 200px;
     height: 200px;
+}
+
+.profile h4{
+    font-family: 'Cadman', sans-serif;
+    font-size: 35px;
+
 }
 
 .github{
@@ -96,6 +108,46 @@ article{
 .profile p{
     font-family: 'Cadman', sans-serif;
     font-size: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* AI圖案區 */
+.animal{
+    width: 75px;
+    height: 75px;
+    opacity: 0.3;
+    transition: 1s;
+}
+.animal:hover{
+    opacity: 1;
+
+}
+
+.modal-header{
+    border: 0;
+}
+
+@media (max-width:768px) {
+    
+    .modal_pic{
+        width: 80vw;
+        /* height: 60vh; */
+    }
+}
+
+.close{
+    color: aliceblue;
+    font-size: 5rem
 }
 
 /* 區域連接圖片 */
