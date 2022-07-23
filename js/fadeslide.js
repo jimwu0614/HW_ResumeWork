@@ -17,7 +17,7 @@
                     left: '0px',
                     top: '0px',
                     opacity: "1",
-                    height: '200px',
+
                     width: '200px',
                     
                   },1000);
