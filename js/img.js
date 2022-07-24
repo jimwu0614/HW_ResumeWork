@@ -1,6 +1,6 @@
 //點擊小圖會用MODAL放大
 
-
+$(document).ready(function () {
 
 $(".animal").on("click",function(){
     let img=$(this).attr('src')  //拿到圖片的連結
@@ -13,3 +13,5 @@ $(".animal").on("click",function(){
                             </button>
                             `) 
     })
+
+})

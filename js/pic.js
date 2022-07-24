@@ -10,7 +10,7 @@
         window.addEventListener('scroll', function () {
             var value = window.scrollY;
 
-            console.log(value);
+            // console.log(value);
             bg.style.top = 0 + value + 'px';
             moon.style.left = 0 + (-value * 0.3) + 'px';
             montain.style.top = 0 + (-value * 0.1) + 'px';

@@ -176,7 +176,7 @@
 
             <div class="col-12 col-md-12"><h1 class="display-4">30 Animal Challenge</h1></div>
             <div class="col-12 col-md-12"><h1 class="display-6">Use golden ratio to drow Animal</h1></div>
-            <div class="row col-12">
+            <div class="row col-12 animal_row">
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/001.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/002.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/003.png" alt=""></div>
@@ -188,7 +188,7 @@
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/009.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/010.png" alt=""></div>
             </div>
-            <div class="row col-12">
+            <div class="row col-12 animal_row">
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/011.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/012.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/013.png" alt=""></div>
@@ -200,7 +200,7 @@
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/019.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/020.png" alt=""></div>
             </div>
-            <div class="row col-12 mb-4">
+            <div class="row col-12 mb-4 animal_row">
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/021.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/022.png" alt=""></div>
                 <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/023.png" alt=""></div>
@@ -288,7 +288,11 @@
 
 
     <script>    
-
+$('#skill').click(function (e) { 
+        var posX = $(this).offset().left,
+            posY = $(this).offset().top;
+      console.log(posX+", "+posY)
+ });
     </script>
 </body>
 
