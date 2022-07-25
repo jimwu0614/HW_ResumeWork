@@ -63,6 +63,12 @@ article{
     font-family: 'CAT FrankenDeutsch', sans-serif;
 }
 
+.trigger{
+    position: relative;
+    bottom: 70vh;
+
+}
+
 .row1{
     height: auto;
     align-items: center;

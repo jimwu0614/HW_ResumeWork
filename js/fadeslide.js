@@ -3,21 +3,33 @@
 
             
 
-            var aboutY = $('#about').offset().top;
-            var aboutHight = $('#about').height();
+            var aboutY = $('#trigger_About').offset().top;
+
             // let aboutY = ('#about').pageYOffset
-            // let aboutY = offset('#about').top
             
             $(window).on('scroll', function () {
-                var value = window.scrollY;
-                let nowloc = 0
-                console.log("現在Y軸"+value);
-                console.log("aboutY"+aboutY);
-                console.log("高度"+aboutHight);
 
-                // 目前捲軸捲動的距離(與最頂端 0 之間的距離)
-                nowloc = $(window).scrollTop()
-                if (nowloc >= (aboutY - aboutHight - 400)) {
+                console.log('aboutY'+aboutY);
+
+                var value = window.scrollY;
+
+                console.log("現在Y軸value"+value);
+
+
+                // let nowloc = 0
+                // nowloc = $(window).scrollTop()
+                // console.log("現在Y軸nowloc"+nowloc);
+
+
+
+
+
+                    //value=用戶滾軸位置
+                              //  
+                if (value >= aboutY) {
+                // if ((aboutY - aboutHight) == 0) {
+                // if (value >= (aboutY - aboutHight - 400)) {
+
                     $("#mypic").animate({
                         right: '0px',
                         top: '0px',
@@ -29,12 +41,13 @@
                 } 
             })
 
-            // let nowloc = 0
+
 
             $(window).on('scroll', function () {
-                // 目前捲軸捲動的距離(與最頂端 0 之間的距離)
-                nowloc = $(window).scrollTop()
-                if (nowloc >= (aboutY - aboutHight - 400)) {
+                var value = window.scrollY;
+
+                // if (value >= (aboutY - aboutHight - 400)) {
+                if (value >= aboutY) {
                     
                     $("#profile").animate({
                         left: '0px',
