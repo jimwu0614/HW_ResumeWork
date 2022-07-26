@@ -44,6 +44,10 @@ body {
     align-items: flex-end;
 }
 
+.nav-item>.focus{
+    color: rgba(171,7,242,0.9)!important
+}
+
 .nav-link{
     width: 10rem;
     color: rgb(0 229 255)!important;
@@ -57,6 +61,7 @@ body {
 /* 正文開始 */
 article{
     color: aliceblue;
+
 }
 
 .section_title{
@@ -133,6 +138,8 @@ article{
 
 /* AI圖案區 */
 .animal{
+    position: relative;
+    top: 50px;
     width: 75px;
     height: 75px;
     opacity: 0.3;
