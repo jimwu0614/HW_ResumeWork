@@ -74,6 +74,7 @@ article{
     align-items: center;
 }
 
+/* 自我介紹區 */
 
 .mypic{
     opacity: 0;
@@ -116,11 +117,14 @@ article{
     font-size: 30px;
 }
 
+/* 經歷區 */
 
 
-
-
-
+/* 技能區 */
+.skill_img_box img{
+    width: 120%;
+    
+}
 
 
 
@@ -141,6 +145,11 @@ article{
 
 .modal-header{
     border: 0;
+}
+
+.modal_pic{
+    width: 100%;
+    /* height: 60vh; */
 }
 
 @media (max-width:768px) {

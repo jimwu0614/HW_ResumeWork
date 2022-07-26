@@ -5,15 +5,14 @@
 
             var aboutY = $('#trigger_About').offset().top;
 
-            // let aboutY = ('#about').pageYOffset
+            var value = window.scrollY;
+
+            console.log("現在Y軸value"+value);
             
             $(window).on('scroll', function () {
 
                 console.log('aboutY'+aboutY);
 
-                var value = window.scrollY;
-
-                console.log("現在Y軸value"+value);
 
 
                 // let nowloc = 0
