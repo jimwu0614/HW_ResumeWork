@@ -143,9 +143,9 @@ article{
     width: 75px;
     height: 75px;
     opacity: 0.3;
-    transition: 1s;
 }
 .animal:hover{
+    transition: 1s;
     opacity: 1;
 
 }

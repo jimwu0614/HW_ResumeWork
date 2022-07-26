@@ -90,7 +90,7 @@
                     $(".animal").animate({
                         left: '0px',
                         top: '0px',
-                    },100);
+                    },800);
 
                     
                     //經過portfolio區
