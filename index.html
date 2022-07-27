@@ -27,7 +27,7 @@
 
     <!-- 內文用字形 -->
     <link href="http://fonts.cdnfonts.com/css/cadman" rel="stylesheet">
-    <link href="http://fonts.cdnfonts.com/css/cat-frankendeutsch" rel="stylesheet">      
+    <link href="http://fonts.cdnfonts.com/css/cat-frankendeutsch" rel="stylesheet">
 
     <!-- 引入JQ -->
     <!-- <link rel="stylesheet" href="./js/jquery-3.6.0.min.js"> -->
@@ -39,12 +39,14 @@
     <!-- 頁首圖片用的CSS -->
     <link rel="stylesheet" href="./css/Head_Pic.css">
 
+    <!-- 履歷表時間線用的CSS -->
+    <link rel="stylesheet" href="./css/timeline.css">
 </head>
 
 <body>
     <!-- 頁首區 -->
-    <nav class="navbar navbar-expand-md navbar-light bg-light "  id="top_nav_bar">
-        
+    <nav class="navbar navbar-expand-md navbar-light bg-light " id="top_nav_bar">
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -60,15 +62,15 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link" id="nav_portfolio" href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link" id="nav_skill" href="#skill">Skill</a>
                 </li>
 
                 <li class="nav-item">
                     <a class="nav-link" id="nav_design" href="#design">Design</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" id="nav_portfolio" href="#portfolio">Portfolio</a>
                 </li>
 
                 <li class="nav-item">
@@ -81,7 +83,7 @@
 
     <!-- 捲動式圖片 -->
     <section class="col-md HeadPic">
-        
+
         <img src="./img/bg.jpg" id="bg" alt="">
         <img src="./img/moon.png" id="moon" alt="">
         <img src="./img/mountain.png" id="montain" alt="">
@@ -95,17 +97,20 @@
 
 
 
-  <!-- 內文主體 -->
+    <!-- 內文主體 -->
     <!-- 自我介紹 -->
-    <article class="container mt-5" >
+    <article class="container mt-5">
         <div class="row row1">
-            <div class="col-12 col-md-12" id="about"><h1 class="display-2 section_title">About Me</h1></div>
+            <div class="col-12 col-md-12" id="about">
+                <h1 class="display-2 section_title">About Me</h1>
+            </div>
             <div class="col-12 col-md-12 trigger" id="trigger_About"></div>
             <div class="col-12 col-md-4 ">
                 <img class="mypic" id="mypic" src="./img/myPic.jpg" alt="mypic">
             </div>
             <div class="col-12 col-md-8 profile" id="profile">
-                <h4>Hello,I'm Chia-Chun<a href="https://github.com/jimwu0614" target="_blank" class="github"><i class="fa-brands fa-github"></i></a></h4>
+                <h4>Hello,I'm Chia-Chun<a href="https://github.com/jimwu0614" target="_blank" class="github"><i
+                            class="fa-brands fa-github"></i></a></h4>
                 <p>
                     A newbie web developer since 2022 , <br>
                     with passion to learn and challenge new things. <br>
@@ -117,7 +122,7 @@
         </div>
     </article>
     <!-- 自我介紹END -->
-    
+
     <!-- 過場圖片 -->
     <article class="m-5 rollImg">
         <div class="row connect1">
@@ -129,11 +134,104 @@
     <!-- 經歷 -->
     <article class="container" id="experience">
         <div class="row">
-            <div class="col-12 col-md-12"><h1 class="display-3 sm-display-2 col-12 col-md-12 section_title">Experience</h1></div>
+            <div class="col-12 col-md-12">
+                <h1 class="display-3 sm-display-2 col-12 col-md-12 section_title">Experience</h1>
+            </div>
+
             <div class="col-12 col-md-12 trigger" id="trigger_Experience"></div>
-            <div class="col-12 col-md-4 bg"><h1>2-1</h1></div>
-            <div class="col-12 col-md-4 bg"><h1>2-2</h1></div>
-            <div class="col-12 col-md-4 bg"><h1>2-3</h1></div>
+
+            <div class="col-12 col-md-6 ">
+                <div class="experance_container">
+                    <div class="top-section">
+                        <h1>Animated Timeline</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti expedita neque ipsa tempore
+                            beatae voluptatem nam voluptas architecto maiores, reprehenderit vel! Officia delectus fuga veritatis
+                            facilis provident necessitatibus sunt.</p>
+                    </div>
+            
+            
+                    <div class="timeline">
+                        <div class="line"></div>
+            
+                        
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Web Design</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur omnis delectus illum
+                                    magnam dolorem, ipsum ipsa nam ab libero molestias laboriosam nobis numquam distinctio minima
+                                    voluptas praesentium aliquam accusantium cupiditate!
+                                </p>
+                            </div>
+                        </div>
+            
+            
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Web Development</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur omnis delectus illum
+                                    magnam dolorem, ipsum ipsa nam ab libero molestias laboriosam nobis numquam distinctio minima
+                                    voluptas praesentium aliquam accusantium cupiditate!
+                                </p>
+                            </div>
+                        </div>
+            
+            
+            
+            
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 ">
+                <div class="experance_container">
+                    <div class="top-section">
+                        <h1>Animated Timeline</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur deleniti expedita neque ipsa tempore
+                            beatae voluptatem nam voluptas architecto maiores, reprehenderit vel! Officia delectus fuga veritatis
+                            facilis provident necessitatibus sunt.</p>
+                    </div>
+            
+            
+                    <div class="timeline">
+                        <div class="line"></div>
+            
+                        
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Web Design</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur omnis delectus illum
+                                    magnam dolorem, ipsum ipsa nam ab libero molestias laboriosam nobis numquam distinctio minima
+                                    voluptas praesentium aliquam accusantium cupiditate!
+                                </p>
+                            </div>
+                        </div>
+            
+            
+                        <div class="section">
+                            <div class="bead"></div>
+                            <div class="content">
+                                <h2>Web Development</h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur omnis delectus illum
+                                    magnam dolorem, ipsum ipsa nam ab libero molestias laboriosam nobis numquam distinctio minima
+                                    voluptas praesentium aliquam accusantium cupiditate!
+                                </p>
+                            </div>
+                        </div>
+            
+            
+            
+            
+                    </div>
+                </div>
+            </div>
+
         </div>
     </article>
     <!-- 經歷END -->
@@ -144,11 +242,43 @@
         </div>
     </article>
     <!-- 過場圖片END -->
-    
+
+    <!-- web作品集 -->
+    <article class="container" id="portfolio">
+
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <h1 class="display-2 section_title">Portfolio</h1>
+            </div>
+            <div class="col-12 col-md-12 trigger" id="trigger_Portfolio"></div>
+            <div class="col-12 col-md-4 bg">
+                <h1>5-1</h1>
+            </div>
+            <div class="col-12 col-md-4 bg">
+                <h1>5-2</h1>
+            </div>
+            <div class="col-12 col-md-4 bg">
+                <h1>5-3</h1>
+            </div>
+        </div>
+    </article>
+    <!-- web作品集END -->
+
+
+
+    <!-- 過場圖片 -->
+    <article class="m-5 rollImg">
+        <div class="row connect3">
+        </div>
+    </article>
+    <!-- 過場圖片END -->
+
     <!-- 技能 -->
     <article class="container" id="skill">
         <div class="row">
-            <div class="col-12 col-md-12"><h1 class="display-2 section_title">Skill</h1></div>
+            <div class="col-12 col-md-12">
+                <h1 class="display-2 section_title">Skill</h1>
+            </div>
             <div class="col-12 col-md-12 trigger" id="trigger_Skill"></div>
             <div class="row col mx-4">
                 <h1 class="col-12">Back-End</h1>
@@ -178,83 +308,6 @@
     </article>
     <!-- 技能END -->
 
-    <!-- 過場圖片 -->
-    <article class="m-5 rollImg">
-        <div class="row connect3">
-        </div>
-    </article>
-    <!-- 過場圖片END -->
-    
-    <!-- 視覺作品集 -->
-    <article class="container" id="design">
-        <div class="row">
-            <div class="col-12 col-md-12"><h1 class="display-2 section_title">Design</h1></div>
-            <div class="col-12 col-md-12 trigger" id="trigger_Design"></div>
-
-            <div class="col-12 col-md-12"><h1 class="display-4">Illustrator Logos design</h1></div>
-            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/heart_line.png" alt=""></div>
-            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/ball.png" alt=""></div>
-            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/REDPOINT.png" alt=""></div>
-            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/mountainAI.png" alt=""></div>
-            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/rocket.png" alt=""></div>
-
-
-
-            <div class="col-12 col-md-12"><h1 class="display-4">30 Animal Challenge</h1></div>
-            <div class="col-12 col-md-12"><h1 class="display-6">Use golden ratio to drow Animal</h1></div>
-            <div class="row col-12 animal_row">
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/001.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/002.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/003.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/004.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/005.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/006.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/007.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/008.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/009.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/010.png" alt=""></div>
-            </div>
-            <div class="row col-12 animal_row">
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/011.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/012.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/013.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/014.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/015.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/016.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/017.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/018.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/019.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/020.png" alt=""></div>
-            </div>
-            <div class="row col-12 mb-4 animal_row">
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/021.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/022.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/023.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/024.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/025.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/026.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/027.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/028.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/029.png" alt=""></div>
-                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/animal/030.png" alt=""></div>
-            </div>
-
-            <div class="col-12 col-md-12"><h1 class="display-4">Photoshop design</h1></div>
-            <div class="col p-0 mt-3 mb-4"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/PSbanner.jpg" alt=""></div>
-            <div class="col p-0 mt-3 mb-4"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/PScalender.jpg" alt=""></div>
-            <div class="col p-0 mt-3 mb-4"><img type="button" data-toggle="modal" data-target="#myModal" class="animal" src="./img/PSposter.jpg" alt=""></div>
-
-        </div>
-
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-header">
-
-                </div>
-            </div>
-          </div>
-    </article>
-    <!-- 視覺作品集END -->
 
     <!-- 過場圖片 -->
     <article class="m-5 rollImg">
@@ -262,42 +315,150 @@
         </div>
     </article>
     <!-- 過場圖片END -->
-    
-    <!-- web作品集 -->
-    <article class="container" id="portfolio">
-        
+
+    <!-- 視覺作品集 -->
+    <article class="container" id="design">
         <div class="row">
-            <div class="col-12 col-md-12"><h1 class="display-2 section_title">Portfolio</h1></div>
-            <div class="col-12 col-md-12 trigger" id="trigger_Portfolio"></div>
-            <div class="col-12 col-md-4 bg"><h1>5-1</h1></div>
-            <div class="col-12 col-md-4 bg"><h1>5-2</h1></div>
-            <div class="col-12 col-md-4 bg"><h1>5-3</h1></div>
+            <div class="col-12 col-md-12">
+                <h1 class="display-2 section_title">Design</h1>
+            </div>
+            <div class="col-12 col-md-12 trigger" id="trigger_Design"></div>
+
+            <div class="col-12 col-md-12">
+                <h1 class="display-4">Illustrator Logos design</h1>
+            </div>
+            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/heart_line.png" alt=""></div>
+            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/ball.png" alt=""></div>
+            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/REDPOINT.png" alt=""></div>
+            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/mountainAI.png" alt=""></div>
+            <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/rocket.png" alt=""></div>
+
+
+
+            <div class="col-12 col-md-12">
+                <h1 class="display-4">30 Animal Challenge</h1>
+            </div>
+            <div class="col-12 col-md-12">
+                <h1 class="display-6">Use golden ratio to drow Animal</h1>
+            </div>
+            <div class="row col-12 animal_row">
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/001.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/002.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/003.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/004.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/005.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/006.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/007.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/008.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/009.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/010.png" alt=""></div>
+            </div>
+            <div class="row col-12 animal_row">
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/011.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/012.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/013.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/014.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/015.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/016.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/017.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/018.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/019.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/020.png" alt=""></div>
+            </div>
+            <div class="row col-12 mb-4 animal_row">
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/021.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/022.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/023.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/024.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/025.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/026.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/027.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/028.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/029.png" alt=""></div>
+                <div class="col p-0 mt-3"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                        src="./img/animal/030.png" alt=""></div>
+            </div>
+
+            <div class="col-12 col-md-12">
+                <h1 class="display-4">Photoshop design</h1>
+            </div>
+            <div class="col p-0 mt-3 mb-4"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/PSbanner.jpg" alt=""></div>
+            <div class="col p-0 mt-3 mb-4"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/PScalender.jpg" alt=""></div>
+            <div class="col p-0 mt-3 mb-4"><img type="button" data-toggle="modal" data-target="#myModal" class="animal"
+                    src="./img/PSposter.jpg" alt=""></div>
+
+        </div>
+
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-header">
+
+                </div>
+            </div>
         </div>
     </article>
-    <!-- web作品集END -->
-    
-    
-  <!-- 內文主體END -->
+    <!-- 視覺作品集END -->
+
+
+
+    <!-- 內文主體END -->
 
 
     <footer class="footer fixed-bottom">
 
     </footer>
-    
-    
-    
-    
 
-    
-    
-    
-    
-    
-    
+
+
+
+
+
+
+
+
+
+
     <!-- 返回最上面的按鈕 -->
     <div id="go_top_page">
         <a href="#" class="animate__animated animate__bounceIn animate__slower animate__infinite"><i
-        class="fas fa-chevron-up"></i></a>
+                class="fas fa-chevron-up"></i></a>
     </div>
     <!-- 返回最上面的按鈕END -->
 
@@ -311,14 +472,16 @@
     <script src="./js/scroll.js"></script>
     <!-- PS&AI圖片MODAL用的JS -->
     <script src="./js/img.js"></script>
+    <!-- 履歷表時間線用的CSS -->
+    <script src="./js/timeline.js"></script>
 
 
-    <script>    
-$('#skill').click(function (e) { 
-        var posX = $(this).offset().left,
-            posY = $(this).offset().top;
-      console.log(posX+", "+posY)
- });
+    <script>
+        $('#skill').click(function (e) {
+            var posX = $(this).offset().left,
+                posY = $(this).offset().top;
+            console.log(posX + ", " + posY)
+        });
     </script>
 </body>
 

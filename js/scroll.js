@@ -64,7 +64,7 @@
 
 
                     // 經過experience區
-                }else if (value >= experienceY && value<skillY){
+                }else if (value >= experienceY && value<portfolioY){
                     //nav_bar根據現在位置變色
                     $(".nav-link").removeClass("focus");
                     $("#nav_experience").addClass("focus")
@@ -72,7 +72,14 @@
 
 
                     
-                    // 經過skill區
+                    //經過portfolio區
+                }else if (value >= portfolioY && value<skillY){
+                    //nav_bar根據現在位置變色
+                    $(".nav-link").removeClass("focus");
+                    $("#nav_portfolio").addClass("focus")
+                    
+
+                // 經過skill區
                 }else if (value >= skillY && value<designY){
                     //nav_bar根據現在位置變色
                     $(".nav-link").removeClass("focus");
@@ -82,7 +89,7 @@
 
                     
                     // 經過design區
-                }else if (value >= designY && value<portfolioY){
+                }else if (value >= designY ){
                     //nav_bar根據現在位置變色
                     $(".nav-link").removeClass("focus");
                     $("#nav_design").addClass("focus")
@@ -91,15 +98,6 @@
                         left: '0px',
                         top: '0px',
                     },800);
-
-                    
-                    //經過portfolio區
-                }else if (value >= portfolioY){
-                    //nav_bar根據現在位置變色
-                    $(".nav-link").removeClass("focus");
-                    $("#nav_portfolio").addClass("focus")
-
-
 
                     
                 }
