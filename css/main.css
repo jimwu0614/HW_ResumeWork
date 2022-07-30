@@ -248,3 +248,7 @@ article{
     color: white;
     text-decoration: none
 }
+
+.footer{
+    background: rgba(120, 119, 131, 0.9);
+}
