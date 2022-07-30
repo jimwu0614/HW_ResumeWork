@@ -83,9 +83,9 @@
                 }else if (value >= skillY && value<designY){
                     //nav_bar根據現在位置變色
                     $(".nav-link").removeClass("focus");
-                    $("#nav_skill").addClass("focus")
+                    $("#nav_skill").addClass("focus");
 
-
+                    $(".skill_img").fadeIn(2000)
 
                     
                     // 經過design區

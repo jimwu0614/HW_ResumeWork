@@ -130,9 +130,9 @@ article{
 /* WEB作品集區 */
 
 /* 技能區 */
-.skill_img_box img{
+.skill_img{
     width: 120%;
-    
+    display: none;
 }
 
 
