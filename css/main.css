@@ -124,6 +124,50 @@ article{
 
 /* 經歷區 */
 
+.odd_icon{
+    position: absolute;
+    left: 2rem;
+    top: -1rem;
+    font-size: 2rem;
+}
+
+.even_icon{
+    position: absolute;
+    right: 2rem;
+    top: -1rem;
+    font-size: 2rem;
+}
+
+@media (max-width:768px) {
+    .odd_icon{
+        display: none;
+    }
+    .even_icon{
+        display: none;
+    }
+}
+
+
+.timeline_header{
+    color: orchid;
+    word-wrap:break-word;
+}
+
+.timeline_subheader{
+    color: lightcoral;
+    word-wrap: break-word;
+}
+
+/* @media (max-width:768px) {
+    
+    .timeline_header{
+        
+    }
+    
+    .timeline_subheader{
+
+    }
+} */
 
 /* 技能區 */
 .skill_img_box img{
