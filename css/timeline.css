@@ -141,3 +141,14 @@ h1{
     color: lightcoral;
     word-wrap: break-word;
 }
+
+/* @media (max-width:768px) {
+    
+    .timeline_header{
+        
+    }
+    
+    .timeline_subheader{
+
+    }
+} */
