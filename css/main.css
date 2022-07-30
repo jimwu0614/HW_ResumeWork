@@ -209,6 +209,8 @@ article{
 .connect{
     height: 40vh;
     position: relative;
+    max-width: 80vw;
+    margin: 0 auto;
 }
 
 .connect img{

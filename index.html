@@ -45,6 +45,7 @@
 
 <body>
     <!-- 頁首區 -->
+    <!-- 導覽列 -->
     <nav class="navbar navbar-expand-md navbar-light bg-light " id="top_nav_bar">
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -74,12 +75,35 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" id="nav_" href="./login.php">Admin Login</a>
+                    <a class="nav-link" id="nav_" type="button" data-toggle="modal" data-target="#loginModal">Admin
+                        Login</a>
                 </li>
 
             </ul>
         </div>
     </nav>
+    <!-- 導覽列 END -->
+
+
+    <!-- 登入用 Modal -->
+    <div class="modal fade" id="loginModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="./back.html" method="post" class="text-center">
+                        <input type="text" class="form-control w-50 m-auto" placeholder="Account">
+                        <input type="password" class="form-control w-50 m-auto" placeholder="Password">
+                        <hr>
+                        <button type="submit" class="btn btn-success" >Submit</button>
+                        <button type="reset" class="btn btn-info" >Reset</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 登入用 Modal END -->
 
     <!-- 捲動式圖片 -->
     <section class="col-md HeadPic">
@@ -98,6 +122,7 @@
 
 
     <!-- 內文主體 -->
+    
     <!-- 自我介紹 -->
     <article class="container mt-5">
         <div class="row row1">
@@ -146,13 +171,14 @@
                     <div class="top-section">
                         <h1>Learning Timeline</h1>
                     </div>
-            
-            
+
+
                     <div class="timeline">
                         <div class="line"></div>
 
                         <div class="section">
-                            <div class="bead"><span class="odd_icon"><i class="fa-solid fa-graduation-cap"></i></span></div>
+                            <div class="bead"><span class="odd_icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            </div>
                             <div class="content">
                                 <h3 class="timeline_header">Workforce Development Agency,Taiwan</h3>
                                 <h4 class="timeline_subheader">2022/03/28~2022/09/15</h4>
@@ -162,8 +188,8 @@
                                 </p>
                             </div>
                         </div>
-            
-            
+
+
                         <div class="section">
                             <div class="bead"><span class="even_icon"><i class="fa-solid fa-briefcase"></i></span></div>
                             <div class="content">
@@ -176,17 +202,18 @@
                                     Customer complaint handling
                                 </p>
                             </div>
-                        </div>            
+                        </div>
 
-                        
+
                         <div class="section">
-                            <div class="bead"><span class="odd_icon"><i class="fa-solid fa-graduation-cap"></i></span></div>
+                            <div class="bead"><span class="odd_icon"><i class="fa-solid fa-graduation-cap"></i></span>
+                            </div>
                             <div class="content">
                                 <h2 class="timeline_header">Chinese Culture University</h2>
                                 <h4 class="timeline_subheader">2011/09~2013/01</h4>
 
                             </div>
-                        </div>            
+                        </div>
 
 
                     </div>
@@ -213,24 +240,30 @@
                 <h1 class="display-2 section_title">Portfolio</h1>
             </div>
             <div class="col-12 col-md-12 trigger" id="trigger_Portfolio"></div>
-            
-            <div class="col-12 col-md-4 bg mb-4">
+
+            <div class="col-12 col-md-3 bg mb-4">
                 <h1 style="color: red;">5-1</h1>
             </div>
-            <div class="col-12 col-md-4 bg mb-4">
+            <div class="col-12 col-md-3 bg mb-4">
                 <h1 style="color: red;">5-2</h1>
             </div>
-            <div class="col-12 col-md-4 bg mb-4">
+            <div class="col-12 col-md-3 bg mb-4">
                 <h1 style="color: red;">5-3</h1>
             </div>
-            <div class="col-12 col-md-4 bg mb-4">
+            <div class="col-12 col-md-3 bg mb-4">
                 <h1 style="color: red;">5-4</h1>
             </div>
-            <div class="col-12 col-md-4 bg mb-4">
+            <div class="col-12 col-md-3 bg mb-4">
                 <h1 style="color: red;">5-5</h1>
             </div>
-            <div class="col-12 col-md-4 bg mb-4">
+            <div class="col-12 col-md-3 bg mb-4">
                 <h1 style="color: red;">5-6</h1>
+            </div>
+            <div class="col-12 col-md-3 bg mb-4">
+                <h1 style="color: red;">5-7</h1>
+            </div>
+            <div class="col-12 col-md-3 bg mb-4">
+                <h1 style="color: red;">5-8</h1>
             </div>
         </div>
     </article>
