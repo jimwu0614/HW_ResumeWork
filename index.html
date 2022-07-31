@@ -41,6 +41,9 @@
 
     <!-- 履歷表時間線用的CSS -->
     <link rel="stylesheet" href="./css/timeline.css">
+
+    <!-- 作品集card用的CSS -->
+    <link rel="stylesheet" href="./css/hovercard.css">
 </head>
 
 <body>
@@ -241,32 +244,78 @@
             </div>
             <div class="col-12 col-md-12 trigger" id="trigger_Portfolio"></div>
         </div>
-        
+
         <div class="row">
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-1</h1>
+            
+            <div class="col-12 col-md-6 col-lg-4  mb-4">
+                <div class="work" data-work="">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="./img/portfolio/toggle_card.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="cardName" id="cardName">Lion</h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="" class="demo" id="demo">Demo</a>
+                            </li>
+                            <li>
+                                <a href=""><i class="fa-brands fa-github"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-2</h1>
+
+            <div class="col-12 col-md-6 col-lg-4  mb-4">
+                <div class="work" data-work="">
+                    
+                </div>
             </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-3</h1>
+
+            <div class="col-12 col-md-6 col-lg-4  mb-4">
+                <div class="work" data-work="">
+                    
+                </div>
             </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-4</h1>
+
+            <div class="col-12 col-md-6 col-lg-4  mb-4">
+                <div class="work" data-work="">
+                    
+                </div>
             </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-5</h1>
+
+            <div class="col-12 col-md-6 col-lg-4  mb-4">
+                <div class="work" data-work="">
+                    
+                </div>
             </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-6</h1>
+
+            <div class="col-12 col-md-6 col-lg-4  mb-4">
+                <div class="work" data-work="">
+                    <div class="card">
+                        <div class="content">
+                            <div class="imgBx">
+                                <img src="./img/plus.png">
+                            </div>
+                            <div class="contentBx">
+                                <h3 class="cardName" id="cardName">See more</h3>
+                            </div>
+                        </div>
+                        <ul class="sci">
+                            <li>
+                                <a href="" class="demo" id="demo">Go</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-7</h1>
-            </div>
-            <div class="col-12 col-md-3 bg mb-4">
-                <h1 style="color: red;">5-8</h1>
-            </div>
+
+
         </div>
     </article>
     <!-- web作品集END -->
@@ -497,11 +546,7 @@
 
 
     <script>
-        $('#skill').click(function (e) {
-            var posX = $(this).offset().left,
-                posY = $(this).offset().top;
-            console.log(posX + ", " + posY)
-        });
+
     </script>
 </body>
 
