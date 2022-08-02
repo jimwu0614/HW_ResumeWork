@@ -151,6 +151,7 @@
     </article>
     <!-- 自我介紹END -->
 
+
     <!-- 過場圖片 -->
     <article class="m-5 rollImg rollImg1">
         <div class="row connect connect1">
@@ -227,6 +228,7 @@
     </article>
     <!-- 經歷END -->
 
+
     <!-- 過場圖片 -->
     <article class="m-5 rollImg rollImg2">
         <div class="row connect connect2">
@@ -234,6 +236,7 @@
         </div>
     </article>
     <!-- 過場圖片END -->
+
 
     <!-- web作品集 -->
     <article class="container" id="portfolio">
@@ -245,9 +248,9 @@
             <div class="col-12 col-md-12 trigger" id="trigger_Portfolio"></div>
         </div>
 
-        <div class="row">
+        <div class="row" id="portfolioBox">
             
-            <div class="col-12 col-md-6 col-lg-4  mb-4">
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
                 <div class="work" data-work="">
                     <div class="card">
                         <div class="content">
@@ -294,6 +297,8 @@
                 </div>
             </div>
 
+            
+            <!-- seemore -->
             <div class="col-12 col-md-6 col-lg-4  mb-4">
                 <div class="work" data-work="">
                     <div class="card">
@@ -314,12 +319,11 @@
                     </div>
                 </div>
             </div>
-
+            <!-- see more end -->
 
         </div>
     </article>
     <!-- web作品集END -->
-
 
 
     <!-- 過場圖片 -->
@@ -329,6 +333,7 @@
         </div>
     </article>
     <!-- 過場圖片END -->
+
 
     <!-- 技能 -->
     <article class="container" id="skill">
@@ -373,6 +378,7 @@
         </div>
     </article>
     <!-- 過場圖片END -->
+
 
     <!-- 視覺作品集 -->
     <article class="container" id="design">
@@ -517,13 +523,6 @@
 
 
 
-
-
-
-
-
-
-
     <!-- 返回最上面的按鈕 -->
     <div id="go_top_page">
         <a href="#" class="animate__animated animate__bounceIn animate__slower animate__infinite"><i
@@ -546,7 +545,13 @@
 
 
     <script>
+        $( document ).ready(function() {
+            $.post("./api/portfolio.php",(work)=>{
+                $("#portfolioBox").html(work)
+            })
 
+        });
+        
     </script>
 </body>
 
