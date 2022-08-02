@@ -34,10 +34,10 @@ foreach ($rows as $key => $value) {
                 </div>
                 <ul class="sci">
                     <li>
-                        <a href="<?= $value['demo'] ?>" class="demo" id="demo">Demo</a>
+                        <a href="<?= $value['demo'] ?>" class="demo" id="demo" target="_blank">Demo</a>
                     </li>
                     <li>
-                        <a href="<?= $value['github'] ?>"><i class="fa-brands fa-github"></i></a>
+                        <a href="<?= $value['github'] ?>" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </li>
                 </ul>
             </div>
