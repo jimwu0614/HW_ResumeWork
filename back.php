@@ -40,6 +40,7 @@ if(!isset($_SESSION['admin'])){
 
 </head>
 <body>
-    
+    <a href="./index.php">front</a>
+    <a href="./api/logout.php">logout</a>
 </body>
 </html>

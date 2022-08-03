@@ -9,9 +9,9 @@ $pw=$_POST['pw'];
 $_SESSION['admin']=$acc;
 
 if ($acc==$default_acc && $pw==$default_pw) {    
-    header("./back.php");    
+    header("location:./back.php");
 }else{
-    header("./index.html");    
+    header("location:./index.php");    
 }
 
 

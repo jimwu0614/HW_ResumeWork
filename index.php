@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,10 +79,15 @@
                 </li>
 
                 <li class="nav-item" id="loginbtn">
-                    <a class="nav-link" id="nav_" type="button" data-toggle="modal" data-target="#loginModal">Admin
-                        Login</a>
+        <?php
+                if(isset($_SESSION['admin'])){
+                    echo '<a href="./back.php" class="nav-link" id="nav_"   >Back Stage</a>';
+                }else{
+                    echo '<a class="nav-link" id="nav_" type="button" data-toggle="modal" data-target="#loginModal">Admin Login</a>';
+                }
+        ?>
                 </li>
-
+                
             </ul>
         </div>
     </nav>
@@ -94,10 +100,11 @@
             <div class="modal-content">
                 <!-- Modal body -->
                 <div class="modal-body">
-                    <form action="./back.html" method="post" class="text-center">
-                        <input type="text" class="form-control w-50 m-auto" placeholder="Account">
-                        <input type="password" class="form-control w-50 m-auto" placeholder="Password">
+                    <form action="./chk.php" method="post" class="text-center">
+                        <input type="text" class="form-control w-50 m-auto" name="acc" placeholder="Account">
+                        <input type="password" class="form-control w-50 m-auto" name="pw" placeholder="Password" >
                         <hr>
+                        
                         <button type="submit" class="btn btn-success" >Submit</button>
                         <button type="reset" class="btn btn-info" >Reset</button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
