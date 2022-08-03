@@ -41,4 +41,4 @@ https://jimwu0614.github.io/Resume_githubPage/
 
 220server:
 http://220.128.133.15/s1110205/HW_ResumeWork/
-真資料
+(真資料)
