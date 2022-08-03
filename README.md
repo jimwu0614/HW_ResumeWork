@@ -35,3 +35,10 @@
 ## 繳交方式
 完整代碼上傳 Github ClassRoom 至指定 repository，並於說明欄位提供 個人 GitPage 之預覽連結:<br>
 [個人作品集前台頁面]()
+github page:
+https://jimwu0614.github.io/Resume_githubPage/
+(假資料)
+
+220server:
+http://220.128.133.15/s1110205/HW_ResumeWork/
+真資料
