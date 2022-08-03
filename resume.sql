@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2022-08-02 15:48:57
+-- 產生時間： 2022-08-03 05:10:33
 -- 伺服器版本： 10.4.24-MariaDB
 -- PHP 版本： 8.1.6
 
@@ -24,10 +24,10 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- 資料表結構 `resume_portlilo`
+-- 資料表結構 `resume_portfolio`
 --
 
-CREATE TABLE `resume_portlilo` (
+CREATE TABLE `resume_portfolio` (
   `id` int(16) NOT NULL,
   `title` varchar(32) COLLATE utf8mb4_unicode_ci NOT NULL,
   `img` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -37,10 +37,10 @@ CREATE TABLE `resume_portlilo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- 傾印資料表的資料 `resume_portlilo`
+-- 傾印資料表的資料 `resume_portfolio`
 --
 
-INSERT INTO `resume_portlilo` (`id`, `title`, `img`, `demo`, `github`, `sh`) VALUES
+INSERT INTO `resume_portfolio` (`id`, `title`, `img`, `demo`, `github`, `sh`) VALUES
 (1, 'calendar1', './img/portfolio/calendar1.png', 'http://220.128.133.15/s1110205/HW_CalenderWork/', 'https://github.com/jimwu0614/PHP_CalenderHomework', 1),
 (2, 'calendar2', './img/portfolio/calendar2.png', 'http://220.128.133.15/s1110205/HW_CalenderWork/', 'https://github.com/jimwu0614/PHP_CalenderHomework', 1),
 (3, 'vote', './img/portfolio/vote.png', 'http://220.128.133.15/s1110205/HW_VoteWork_220/', 'https://github.com/jimwu0614/HomeWork_VoteSys', 1),
@@ -56,9 +56,9 @@ INSERT INTO `resume_portlilo` (`id`, `title`, `img`, `demo`, `github`, `sh`) VAL
 --
 
 --
--- 資料表索引 `resume_portlilo`
+-- 資料表索引 `resume_portfolio`
 --
-ALTER TABLE `resume_portlilo`
+ALTER TABLE `resume_portfolio`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -66,9 +66,9 @@ ALTER TABLE `resume_portlilo`
 --
 
 --
--- 使用資料表自動遞增(AUTO_INCREMENT) `resume_portlilo`
+-- 使用資料表自動遞增(AUTO_INCREMENT) `resume_portfolio`
 --
-ALTER TABLE `resume_portlilo`
+ALTER TABLE `resume_portfolio`
   MODIFY `id` int(16) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 

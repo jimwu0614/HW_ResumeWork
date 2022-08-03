@@ -2,7 +2,7 @@
 session_start();
 $dsn = "mysql:host=localhost;charset=utf8;dbname=resume";
 $pdo = new PDO($dsn, 'root', '');
-$sql = "SELECT * FROM `resume_portlilo` WHERE `sh` = '1' LIMIT 5";
+$sql = "SELECT * FROM `resume_portfolio` WHERE `sh` = '1' LIMIT 5";
 $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
 // echo "<pre>";
