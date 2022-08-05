@@ -28,6 +28,7 @@ body{
 
 .logo-img{
     width: 150px;
+    opacity: 0.75;
 }
 
 .nav_links{
@@ -101,22 +102,24 @@ body{
     top: calc(100% / 6 * 5 + 2%);
 }
 
-.logo-icon{
+/* .logo-icon{
     display: none;
     width: 45px;
-}
+} */
 
 @media  (max-width:540px) {
     .side-nav{
         width: 110px;
     }
 
-    .logo-icon{
+    /* .logo-icon{
         display: block;
-    }
+    } */
 
     .logo-img{
-        display: none;
+        width: 60px;
+        position: relative;
+        top: 30px;
     }
 
     .nav_links li a p{

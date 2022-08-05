@@ -37,7 +37,7 @@ foreach ($rows as $key => $value) {
                 </div>
                 <ul class="sci">
                     <li>
-                        <a href="<?= $value['demo'] ?>" class="demo" id="demo" target="_blank">Demo</a>
+                        <a href="<?= $value['demo'] ?>" class="demo"  target="_blank">Demo</a>
                     </li>
                     <li>
                         <a href="<?= $value['github'] ?>" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -63,7 +63,7 @@ foreach ($rows as $key => $value) {
             </div>
             <ul class="sci">
                 <li>
-                    <a href="" class="demo" id="demo">Go</a>
+                    <a href="./gallery.php" class="demo" >Go</a>
                 </li>
 
             </ul>

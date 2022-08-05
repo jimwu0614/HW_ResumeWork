@@ -40,42 +40,60 @@ if (!isset($_SESSION['admin'])) {
 
 <body>
 
-<!-- 左邊導覽列 -->
+    <!-- 左邊導覽列 -->
     <div class="side-nav">
-        <a href="#" class="logo">
-            <img src="./logo.png" alt="" class="logo-img">
-            <img src="./logo-icon.png" alt="" class="logo-icon">
+        <a href="./index.php" class="logo">
+            <img src="./img/favicon.png" alt="" class="logo-img">
+
         </a>
 
         <ul class="nav_links">
             <li>
-                <a href=""><i class="fa-solid fa-pen-nib"></i><p>About</p></a>
+                <a href="?do=about"><i class="fa-solid fa-pen-nib"></i>
+                    <p>About</p>
+                </a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-graduation-cap"></i><p>Experience</p></a>
+                <a href="?do=experience"><i class="fa-solid fa-graduation-cap"></i>
+                    <p>Experience</p>
+                </a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-code"></i><p>Portfolio</p></a>
+                <a href="?do=ortfolio"><i class="fa-solid fa-code"></i>
+                    <p>Portfolio</p>
+                </a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-book-skull"></i><p>Skill</p></a>
+                <a href="?do=skill"><i class="fa-solid fa-book-skull"></i>
+                    <p>Skill</p>
+                </a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-paintbrush"></i><p>Design</p></a>
+                <a href="?do=design"><i class="fa-solid fa-paintbrush"></i>
+                    <p>Design</p>
+                </a>
             </li>
             <li>
-                <a href=""><i class="fa-solid fa-arrow-right-from-bracket"></i><p>Logout</p></a>
+                <a href="./api/logout.php"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+                    <p>Logout</p>
+                </a>
             </li>
             <div class="active"></div>
         </ul>
     </div>
-<!-- 左邊導覽列 END-->
+    <!-- 左邊導覽列 END-->
 
-<div class="container">
-<?php
-// $_GET['do']??
-?>
-</div>
+    <div class="container">
+        <?php
+        $do = $_GET['do'] ?? 'about';
+        $file = "./back/" . $do . "/php";
+        if (file_exists($file)) {
+            include $file;
+        } else {
+            include "./back/about.php";
+        }
+        ?>
+    </div>
 
 
 </body>
