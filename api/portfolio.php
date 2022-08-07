@@ -6,7 +6,7 @@ include_once "../base.php";
 // $sql = "SELECT * FROM `resume_portfolio` WHERE `sh` = '1' LIMIT 5";
 // $rows = $pdo->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-$rows = $Portfolio->all(['sh'=>"1"],'LIMIT 5');
+$rows = $Portfolio->all(['sh'=>"1"],'ORDER BY `rank` LIMIT 5');
 
 // echo "<pre>";
 // print_r($rows);

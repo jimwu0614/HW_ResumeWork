@@ -59,7 +59,7 @@ if (!isset($_SESSION['admin'])) {
                 </a>
             </li>
             <li>
-                <a href="?do=ortfolio"><i class="fa-solid fa-code"></i>
+                <a href="?do=portfolio"><i class="fa-solid fa-code"></i>
                     <p>Portfolio</p>
                 </a>
             </li>
@@ -86,7 +86,7 @@ if (!isset($_SESSION['admin'])) {
     <div class="container">
         <?php
         $do = $_GET['do'] ?? 'about';
-        $file = "./back/" . $do . "/php";
+        $file = "./back/".$do.".php";
         if (file_exists($file)) {
             include $file;
         } else {
