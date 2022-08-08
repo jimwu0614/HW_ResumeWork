@@ -1,0 +1,13 @@
+h1{
+    font-family: 'CAT FrankenDeutsch', sans-serif;
+    color: #fff;
+    font-size: 7.5vw;
+}
+
+.row{
+    justify-content: space-around;
+}
+
+.card{
+    width: 260px;
+}

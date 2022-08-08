@@ -6,6 +6,9 @@ class DB{
     protected $dsn = "mysql:host=localhost;charset=utf8;dbname=resume";
     protected $user = "root";
     protected $pw = "";
+    // protected $dsn = "mysql:host=localhost;charset=utf8;dbname=s1110205";
+    // protected $user = "s1110205";
+    // protected $pw = "s1110205";
     protected $table;
     protected $pdo;
 
