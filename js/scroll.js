@@ -1,26 +1,27 @@
         // 控制內文滑進來
         $(document).ready(function () {
 
+            $(window).on('scroll', function () {
+
             //先宣告各種trigger的Y軸位置為變數
 
             var aboutY = $('#trigger_About').offset().top;
-            console.log('aboutY:'+aboutY);
+            // console.log('aboutY:'+aboutY);
 
             var experienceY = $('#trigger_Experience').offset().top;
-            console.log('experienceY:'+experienceY);
+            // console.log('experienceY:'+experienceY);
+            
+            var portfolioY = $('#trigger_Portfolio').offset().top;
+            // console.log('portfolioY:'+portfolioY);
 
             var skillY = $('#trigger_Skill').offset().top;
-            console.log('skillY:'+skillY);
+            // console.log('skillY:'+skillY);
 
             var designY = $('#trigger_Design').offset().top;
-            console.log('designY:'+designY);
-
-            var portfolioY = $('#trigger_Portfolio').offset().top;
-            console.log('portfolioY:'+portfolioY);
+            // console.log('designY:'+designY);
 
             
             
-            $(window).on('scroll', function () {
                 
                 //宣告用戶Y軸位置
                 var value = window.scrollY;
