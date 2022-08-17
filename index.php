@@ -490,17 +490,6 @@
                 $("#portfolioBox").html(work);
             })
 
-            
-
-
-
-
-
-
-
-
-
-
 
         });
     </script>
