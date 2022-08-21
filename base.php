@@ -59,21 +59,28 @@ class DB{
 
 
     function find($id){
-        $sql="SELECT * FROM $this->table WHERE";
+        $sql="SELECT * FROM $this->table WHERE ";
 
-            if(is_array($id)){
-                foreach($id as $key=>$value){
-                    $tmp[] =" `$key` = '$value' ";
+            if (is_array($id)) {
+                foreach ($id as $key => $value){
+                    $tmp[] = " `$key` = '$value' ";
                 }
                 $sql.=  join(" AND ",$tmp);
             }else{
-                $sql.=" `id` =  `$id` ";
+                $sql.=" `id` =  $id ";
             }
 
 
         // echo $sql;
         return $this->pdo->query($sql)->fetch(PDO::FETCH_ASSOC) ;
     }
+
+
+
+    
+
+
+
 
 
     function del($id){
@@ -94,7 +101,7 @@ class DB{
     }
 
     
-    function safe($array){
+    function save($array){
         
 
             if(isset($array['id'])){

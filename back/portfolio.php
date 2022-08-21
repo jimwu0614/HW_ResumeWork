@@ -3,7 +3,7 @@
 
 <div class="row box">
     <div class="col-12 blur px-3">
-        <form  action="./api/edit_portfolio.php" method="post">
+        <form action="./api/edit.php" method="post" enctype="multipart/form-data">
             <div class="container">
                 <table id="table_id" class="table table-striped">
                     <thead>
@@ -21,32 +21,82 @@
                         <?php
                         $rows = $Portfolio->all();
                         foreach ($rows as $key => $value) {
-
+                            $rank = str_pad($value['rank'], 2, "0", STR_PAD_LEFT);
+                            $prev = (isset($rows[$key - 1])) ? $rows[$key - 1]['id'] : $value['id'];
+                            $next = (isset($rows[$key + 1])) ? $rows[$key + 1]['id'] : $value['id'];
                         ?>
-                        <tr>
-                            <td><input type="text" name="title[]" value="<?=$value['title']?>"></td>
-                            <td><img class="img" src="<?=$value['img']?>" alt=""></td>
-                            <td><input type="file" name="img[]" value="./img/portfolio/<?=$value['img']?>"></td>
-                            <td><input type="text" name="demo[]" value="<?=$value['demo']?>"></td>
-                            <td><input type="text" name="github[]" value="<?=$value['github']?>"></td>
-                            <td class="warp">
-                                <div class="flex">
-                                    <span><input type="checkbox" name="show[]" value=""></span><span>Show</span>
-                                    <span><input type="checkbox" name="del[]" value=""></span><span>Del</span>
-                                </div>
-                                <div class="flex">
-                                    <button class="act_btn">Up</button>
-                                    <button class="act_btn">Dn</button>
-                                </div>
-                            </td>
-                        </tr>
+                            <tr>
+                                <td><input class="inputtitle" type="text" name="title[]" value="<?= $value['title'] ?>">
+                                    <p><?= $value['title'] ?></p>
+                                </td>
+                                <td><img class="img" src="<?= $value['img'] ?>" alt=""></td>
+                                <td><input class="inputfile " type="file" name="img[]" value="./img/portfolio/<?= $value['img'] ?>"></td>
+                                <td><textarea name="demo[]" cols="25" rows="2"><?= $value['demo'] ?></textarea></td>
+                                <td><textarea name="github[]" cols="25" rows="2"><?= $value['github'] ?></textarea></td>
+                                <td class="flex">
+
+                                    <div class="flexcol">
+                                        <span><input type="checkbox" name="sh[]" value="<?= $value['id']; ?>" <?=($value['sh']==1)?'checked':'';?>></span><span>Show</span>
+                                        <span><input type="checkbox" name="del[]" value="<?= $value['id']; ?>"></span><span>Del</span>
+                                    </div>
+                                    <div class="flexcol">
+                                        <button class="act_btn" type="button" data-rank="<?= $value['rank']; ?>" data-id="<?= $value['id']; ?>" onclick="sw('resume_portfolio',[<?= $value['id']; ?>,<?= $prev; ?>])">Up</button>
+                                        <button class="act_btn" type="button" data-rank="<?= $value['rank']; ?>" data-id="<?= $value['id']; ?>" onclick="sw('resume_portfolio',[<?= $value['id']; ?>,<?= $next; ?>])">Dn</button>
+                                    </div>
+                                    <div>
+                                        <div> Now</div>
+                                        <textarea name="rank[]" cols="2" rows="1"><?= $rank ?></textarea>
+                                    </div>
+                                </td>
+                            </tr>
 
                         <?php
                         }
                         ?>
                     </tbody>
                 </table>
+                <div>
+                    <input type="hidden" name="table" value="portfolio">
+                    <input class="btn btn-success" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="button" value="Add" data-toggle="modal" data-target="#AddModal">
+                    <input class="btn btn-warning" type="reset" value="Reset">
+                </div>
             </div>
         </form>
     </div>
 </div>
+
+<!-- 新增檔案用的MODAL -->
+<div class="modal fade" id="AddModal">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <!-- Modal body -->
+            <div class="modal-body">
+                <form action="./api/add.php" method="post" class="text-center">
+                    <input type="text" class="form-control w-50 m-auto" name="title" placeholder="Title"><br>
+                    <textarea name="" name="demo" cols="30" rows="2" placeholder="Demo Url"></textarea><br>
+                    <textarea name="" name="github" cols="30" rows="2" placeholder="github Url"></textarea><br>
+                    <input type="file" class="form-control w-50 m-auto" name="img">
+                    <hr>
+
+                    <button type="submit" class="btn btn-success">Submit</button>
+                    <button type="reset" class="btn btn-info">Reset</button>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- 新增檔案用的MODAL 結束 -->
+
+<script>
+    function sw(table, id) {
+        $.post("./api/switch.php", {
+            table,
+            id
+        }, () => {
+
+            location.reload();
+        })
+    }
+</script>

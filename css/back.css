@@ -179,6 +179,15 @@ h1{
     display: flex;
 }
 
+.flexcol{
+    display: flex;
+    flex-direction: column;
+}
+
+.flexcol span{
+    height: 15px;
+}
+
 .warp{
     display: flex;
     flex-wrap: wrap;
@@ -186,11 +195,18 @@ h1{
 
 .act_btn{
     width: 40px;
+    height: 25px;
     color: black;
     margin: 0 5px;
 }
 
-input{
+input,textarea{
     color: black;
-    /* width: 80%; */
+}
+.inputtitle{
+    width: 7vw;
+}
+.inputfile{
+    width: 11vw;
+
 }
