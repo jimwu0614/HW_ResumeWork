@@ -19,17 +19,21 @@ switch ($table) {
         $data['del'] = $_POST['del'];
         $data['rank'] = $_POST['rank'];
 
-        $img = $_FILES['img'];
+        
+        $data['img'] = $_FILES['img'];
+        
+        // dd($data['img']['tmp_name']);
+        dd($_FILES['img']);
 
-        if(!empty($img['tmp_name'])){
-            $data['img']=$img['name'];
-            move_uploaded_file($img['tmp_name'],'../upload/'.$img['name']);
+        
+        if(!empty($data['img']['tmp_name'])){
+            $data['img']=$data['img']['name'];
+            move_uploaded_file($data['img']['tmp_name'],'../img/portfolio/'.$data['img']['name']);
         }else{
             $data['img']=$Portfolio->find($id)['img'];
         }
         
         
-        dd($data);
 
 
 
