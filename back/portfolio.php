@@ -19,7 +19,7 @@
                     <tbody>
 
                         <?php
-                        $rows = $Portfolio->all();
+                        $rows = $Portfolio->all("order by rank");
                         foreach ($rows as $key => $value) {
                             $rank = str_pad($value['rank'], 2, "0", STR_PAD_LEFT);
                             $prev = (isset($rows[$key - 1])) ? $rows[$key - 1]['id'] : $value['id'];
@@ -34,7 +34,7 @@
                                 <td><textarea name="demo[]" cols="25" rows="2"><?= $value['demo'] ?></textarea></td>
                                 <td><textarea name="github[]" cols="25" rows="2"><?= $value['github'] ?></textarea></td>
                                 <td class="flex">
-
+                                    
                                     <div class="flexcol">
                                         <span><input type="checkbox" name="sh[]" value="<?= $value['id']; ?>" <?=($value['sh']==1)?'checked':'';?>></span><span>Show</span>
                                         <span><input type="checkbox" name="del[]" value="<?= $value['id']; ?>"></span><span>Del</span>
@@ -47,6 +47,7 @@
                                         <div> Now</div>
                                         <textarea name="rank[]" cols="2" rows="1"><?= $rank ?></textarea>
                                     </div>
+
                                 </td>
                             </tr>
 
@@ -91,10 +92,7 @@
 
 <script>
     function sw(table, id) {
-        $.post("./api/switch.php", {
-            table,
-            id
-        }, () => {
+        $.post("./api/switch.php", {table,id}, () => {
 
             location.reload();
         })

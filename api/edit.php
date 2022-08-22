@@ -10,28 +10,30 @@ $table = $_POST['table'];
 
 
 switch ($table) {
-    case 'value':
-        $title = $_POST['title'];
+    case 'portfolio':
+        $data = [];
+        $data['title'] = $_POST['title'];
+        $data['demo'] = $_POST['demo'];
+        $data['github'] = $_POST['github'];
+        $data['sh'] = $_POST['sh'];
+        $data['del'] = $_POST['del'];
+        $data['rank'] = $_POST['rank'];
+
         $img = $_FILES['img'];
-        $demo = $_POST['demo'];
-        $github = $_POST['github'];
-        $sh = $_POST['sh'];
-        $del = $_POST['del'];
-        $rank = $_POST['rank'];
 
         if(!empty($img['tmp_name'])){
-            $_POST['img']=$img['name'];
+            $data['img']=$img['name'];
             move_uploaded_file($img['tmp_name'],'../upload/'.$img['name']);
         }else{
-            $_POST['img']=$Portfolio->find($id)['img'];
+            $data['img']=$Portfolio->find($id)['img'];
         }
         
         
+        dd($data);
 
 
 
-
-        
+        // to("back.php?do=portfolio");
     break;
     case 'value':
             
