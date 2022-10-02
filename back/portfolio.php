@@ -10,10 +10,10 @@
                         <tr>
                             <th style="width: 18%;">Project</th>
                             <th style="width: 10%;">Pic</th>
-                            <th style="width: 10%;">Img url</th>
-                            <th style="width: 21%;">Demo url</th>
+                            <th style="width: 10%;">Demo url</th>
                             <th style="width: 21%;">Github</th>
-                            <th style="width: 20%;">Action</th>
+                            <th style="width: 21%;">Action</th>
+                            <th style="width: 20%;">Edit</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,11 +26,10 @@
                             $next = (isset($rows[$key + 1])) ? $rows[$key + 1]['id'] : $value['id'];
                         ?>
                             <tr>
-                                <td><input class="inputtitle" type="text" name="title[]" value="<?= $value['title'] ?>">
-                                    <p><?= $value['title'] ?></p>
+                                <td><p><?= $value['title'] ?></p>
+                                <button id="title<?= $value['id'] ?>">Edit</button>
                                 </td>
                                 <td><img class="img" src="<?= $value['img'] ?>" alt=""></td>
-                                <td><input class="inputfile " type="file" name="img[]" value="./img/portfolio/<?= $value['img'] ?>"></td>
                                 <td><textarea name="demo[]" cols="25" rows="2"><?= $value['demo'] ?></textarea></td>
                                 <td><textarea name="github[]" cols="25" rows="2"><?= $value['github'] ?></textarea></td>
                                 <td class="flex">
@@ -49,6 +48,8 @@
                                     </div>
 
                                 </td>
+                                <td><input class="inputfile " type="file" name="img[]" value="./img/portfolio/<?= $value['img'] ?>"></td>
+
                             </tr>
 
                         <?php
@@ -59,7 +60,7 @@
                 <div>
                     <input type="hidden" name="table" value="portfolio">
                     <input class="btn btn-success" type="submit" value="Submit">
-                    <input class="btn btn-primary" type="button" value="Add" data-toggle="modal" data-target="#AddModal">
+                    <input class="btn btn-primary" type="button" value="Add" data-toggle="modal" data-target="#Modal">
                     <input class="btn btn-warning" type="reset" value="Reset">
                 </div>
             </div>
@@ -68,7 +69,7 @@
 </div>
 
 <!-- 新增檔案用的MODAL -->
-<div class="modal fade" id="AddModal">
+<div class="modal fade" id="Modal">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
             <!-- Modal body -->
